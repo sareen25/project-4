@@ -1,0 +1,170 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #0d1b2a, #000);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Background */
+/* .background {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('C:\Users\msareen3\OneDrive - DXC Production\Pictures\aman formal.jpg');
+    background-size: cover;
+    background-position: center;
+} */
+
+/* Navigation Bar */
+.nav {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Profile Image Styling */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-img {
+    width: 150px; /* Adjust as needed */
+    height: 150px;
+    /* border-radius: 50%; Makes it circular */
+    border: 1px solid white; /* Optional border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s ease-in-out;
+    overflow: none;
+}
+
+.profile-img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+/* Content Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Glassmorphism Windows */
+.window {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.window:hover {
+    transform: translateY(-5px);
+}
+
+/* Title Bar */
+.title-bar {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.minimize, .maximize, .close {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.minimize { background: yellow; }
+.maximize { background: green; }
+.close { background: red; }
+
+/* Content Section */
+.content {
+    padding: 20px;
+}
+
+.content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: rgb(230, 249, 249);
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff9800;
+}
+
+/* Marquee Section */
+marquee {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.companyName {
+    color: blue;
+}
